@@ -8,8 +8,15 @@
 <body>
     <h1>Hello</h1>
     <h1 class="HTag">Hello</h1>
-    <h1 id="H1-tag">hello</h1>
+    <h1 id="H1-tag" style="position: sticky; top:0">hello</h1>
+    <button onclick="window.open(`https://www.youtube.com/watch?v=1K5QIfQzdv0`)">Click</button>
     <script>
+
+
+        // DOM -> Document Object Model
+        
+
+
         // 1. document
         // 2. window
         // document.body.append("Hello")
@@ -27,26 +34,23 @@
         // 3. querySelectorAll
         // 4. getElementByClassName
 
-        const h1tagById = document.getElementById('H1-tag');
-        h1tagById.style.color = 'red'
+        // const h1tagById = document.getElementsByClassName("HTag");
+        // console.log(h1tagById);
+        // h1tagById.style.color = 'red'
         // const h1tagByClass = document.getElementsByClassName("HTag");
         // h1tagByClass.innerHTML = 'Bye'
-        // const allTags = document.querySelectorAll("h1")
-        const alltag2 = document.querySelector("#H1-tag");
-        let paymentStatus = '';
-        paymentStatus = ''
-        if(paymentStatus === 'Succeed'){
-            alltag2.style.backgroundColor = 'green'
-        } else {
-            alltag2.style.backgroundColor = 'black'
-        }
+        const allTags = document.querySelectorAll("h1")
+        console.log(allTags);
+        // const alltag2 = document.querySelector("#H1-tag");
+        // let paymentStatus = '';
+        // paymentStatus = ''
+        // if(paymentStatus === 'Succeed'){
+        //     alltag2.style.backgroundColor = 'green'
+        // } else {
+        //     alltag2.style.backgroundColor = 'black'
+        // }
         // alltag2.style.backgroundColor = 'red'
 
     </script>
 </body>
 </html>
-
-<!-- 1. sticky
-2. getElementsByClassName
-3. window open 
-4. querySelectorAll -->
